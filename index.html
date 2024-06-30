@@ -1,0 +1,298 @@
+<!-- 38644 - Israr Rashid -->
+<!-- A6- webpage 2 using html and css  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --color-primary:#fff;
+            --color-primary--darker:rgb(200, 200, 200);
+            --color-secondary:#000000;
+            --color-secondary--light:#737373;
+        }
+        body{
+            background: var(--color-secondary);
+        }
+        .navbar{
+            width: 98%;
+            height: 13vh;
+            /* border: solid; */
+            padding: 10px;
+            overflow: hidden;
+            box-shadow: 0px 4px 3px var(--color-primary);
+        }
+        .navbar a{
+            float: left;
+            font-family: sans-serif;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--color-primary);
+            text-align: center;
+            padding: 15px 16px;
+            text-decoration: none;
+            transition: color .3s ease;
+            /* border: solid; */
+        }
+
+        .navbar a:hover{
+            color: var(--color-primary--darker);
+            transition: color .3s ease;
+        }
+
+        .navbar__col1{
+            width: 15%;
+            height: 11vh;
+            /* border: solid; */
+            display: inline-block;
+        }
+        .navbar__col1 img{
+            width: 100%;
+            height: 8vh;
+        }
+        .navbar__col2{
+            width: 80%;
+            height: 11vh;
+            /* border: solid; */
+            display: inline-block;
+            margin-left: 40px;
+        }
+        .header{
+            margin-top: 30px;
+            width: 99.3%;
+            height: 65vh;
+            /* border: solid; */
+            /* display: flex; */
+        }
+
+        .header__image1{
+            width: 58%;
+            height: 65vh;
+            box-shadow: 0 0 20px 5px var(--color-primary);
+            float: left;
+        }
+
+        .header__image2{
+            width: 42%;
+            height: 65vh;
+            box-shadow: 10px 0 20px 5px var(--color-primary);
+            float: left;
+        }
+
+        .header a{
+            text-decoration: none;
+            color: var(--color-secondary);
+        }
+
+        .section1{
+            width: 99.3%;
+            /* border: solid; */
+            height: 45vh;
+            margin-top: 30px;
+            
+        }
+
+        .section1 h1,
+        .section2 h1{
+            margin-left: 20px;
+            font-family: sans-serif;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--color-primary);
+        }
+        .card1{
+            width: 23%;
+            height: 30.7vh;
+            /* border: solid; */
+            float: left;
+            margin-left: 15px;
+        }
+
+        .card1 img{
+            width: 100%;
+            /* border: solid; */
+            box-shadow: 0 0 10px 1px var(--color-primary);
+            border-radius: 10%;
+        }
+        .section2{
+            width: 99.3%;
+            height: 85vh;
+            /* border: solid; */
+            margin-top: 20px;
+        }
+        
+        .card2{
+            width: 42%;
+            height: 73vh;
+            /* border: solid; */
+            float: left;
+            margin-left: 70px;
+            box-shadow: 0 0 10px 1px var(--color-primary);
+            border-radius: 10%;
+        }
+        .card2 img{
+            width: 100%;
+            height: 73vh;
+            border-radius: 10%;
+        }
+
+        .card3{
+            width: 42%;
+            height: 21.7vh;
+            float: left;
+            /* border: solid; */
+            margin-bottom: 20px;
+            margin-left: 70px;
+            box-shadow: 0 0 10px 1px var(--color-primary);
+            border-radius: 10%;
+        }
+
+        .card3 img{
+            width: 100%;
+            height: 21.7vh;
+            border-radius: 10%;
+        }
+        .footer{
+            width: 98%;
+            height: 20vh;
+            /* border: solid; */
+            margin-top: 20px;
+        }
+
+        .footer__row--col{
+            float: left;
+        }
+        .footer__row--item{
+            list-style-type: none;
+            color: var(--color-secondary--light);
+            margin-left: 80px;
+        }
+        .footer__row--item a{
+            text-decoration: none;
+            color: var(--color-secondary--light);
+            font-family: sans-serif;
+        }
+
+        .copyright{
+            width: 100%;
+            height: 10vh;
+            color: var(--color-secondary--light);
+            margin-top: 45px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar__col1">
+            <a href="https://www.netflix.com/pk/">
+                <img src="public/images/logo.png" alt="logo">
+            </a>
+        </div>
+        <div class="navbar__col2">
+            <a href="">Home</a>
+            <a href="">TV Shows</a>
+            <a href="">Movies</a>
+            <a href="">New & Popular</a>
+            <a href="">My List</a>
+            <a href="">Browse by Language</a>
+        </div>
+    </div>
+    <div class="header">
+        <a href="https://www.netflix.com/pk/title/80211991">
+            <img class="header__image1" src="public/images/you season.webp" alt="you season">
+            <img class="header__image2" src="public/images/you season_2.jpg" alt="you season">
+        </a>
+    </div>
+    <div class="section1">
+        <h1>New Releases</h1>
+        <div class="card1">
+            <a href="https://www.netflix.com/in/title/81465707">
+                <img src="public/images/spiderman no way home.jpg" alt="spiderman no way home">
+            </a>
+        </div>
+        <div class="card1">
+            <a href="https://www.google.com/search?q=black+adam&sxsrf=APwXEdfCXml5eoWmLF8HvY10J20SR872eQ%3A1680455170416&ei=ArYpZMf3GJO3sAfPkq_AAw&ved=0ahUKEwjHgPmr14v-AhWTG-wKHU_JCzgQ4dUDCA8&uact=5&oq=black+adam&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIECCMQJzIKCC4QsQMQigUQQzIKCAAQigUQyQMQQzIICAAQigUQkgMyCAgAEIoFEJIDMgoIABCKBRCxAxBDMgcIABCKBRBDMgcIABCKBRBDMgcIABCKBRBDMgcIABCKBRBDOgoIABBHENYEELADOgoIABCKBRCwAxBDSgQIQRgAUOYFWN8GYIUJaAFwAXgAgAGVAogBnASSAQMyLTKYAQCgAQHIAQrAAQE&sclient=gws-wiz-serp">
+                <img src="public/images/black adam.jpg" alt="black adam">
+            </a>
+        </div>
+        <div class="card1">
+            <a href="https://www.google.com/search?q=doctor+strange+in+the+multiverse+of+madness&sxsrf=APwXEdetMG3T1TSZrcGJFnJa9UMvj-5XrQ%3A1680455292007&ei=fLYpZMkSi7uSBZughfgB&oq=doctor+s&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAxgBMgQIIxAnMgQIIxAnMgoILhCKBRDUAhBDMhAILhCKBRCxAxCDARDUAhBDMhAILhCDARDUAhCxAxCKBRBDMgoILhCKBRDUAhBDMgcIABCKBRBDMgcIABCKBRBDMgcIABCKBRBDMg4ILhCABBCxAxCDARDUAjoHCCMQsAMQJzoKCAAQRxDWBBCwAzoKCAAQigUQsAMQQzoNCAAQ5AIQ1gQQsAMYAToPCC4QigUQyAMQsAMQQxgCOgoILhDUAhCKBRBDOgcILhCKBRBDOgsIABCABBCxAxCDAToNCC4QFBCHAhCxAxCABEoECEEYAFDc_QFYlYYCYLiTAmgBcAF4AIABwAOIAa0UkgEFMy00LjOYAQCgAQHIARPAAQHaAQYIARABGAnaAQYIAhABGAg&sclient=gws-wiz-serp">
+                <img src="public/images/docter strange.jpg" alt="doctor strange">
+            </a>
+        </div>
+        <div class="card1">
+            <a href="https://www.google.com/search?q=thor+love+and+thunder&sxsrf=APwXEdeTuFhqtT-HDsMmNs4SX_xDbvOlmQ%3A1680455278208&ei=brYpZKmXDMb1sAfqmZ-oCg&ved=0ahUKEwiphqzf14v-AhXGOuwKHerMB6UQ4dUDCA8&uact=5&oq=thor+love+and+thunder&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIKCAAQRxDWBBCwAzIKCAAQRxDWBBCwAzIKCAAQRxDWBBCwAzIKCAAQRxDWBBCwAzIKCAAQRxDWBBCwAzIKCAAQRxDWBBCwAzIKCAAQRxDWBBCwAzIKCAAQRxDWBBCwAzIKCAAQigUQsAMQQzIKCAAQigUQsAMQQzIKCAAQigUQsAMQQzIKCAAQigUQsAMQQzINCAAQ5AIQ1gQQsAMYATINCAAQ5AIQ1gQQsAMYATINCAAQ5AIQ1gQQsAMYATIPCC4QigUQyAMQsAMQQxgCMg8ILhCKBRDIAxCwAxBDGAIyEgguEIoFENQCEMgDELADEEMYAjIPCC4QigUQyAMQsAMQQxgCSgQIQRgAUNoFWMgGYMkIaAFwAXgAgAG1AogBtQKSAQMzLTGYAQCgAQHIARPAAQHaAQYIARABGAnaAQYIAhABGAg&sclient=gws-wiz-serp">
+                <img src="public/images/thor love and thunder.jpg" alt="thor love and thunder">
+            </a>
+        </div>
+    </div>
+    <div class="section2">
+        <h1>Top 10 TV Shows in Pakistan Today</h1>
+        <div class="card2">
+            <a href="https://www.youtube.com/watch?v=ePoY-f0Ll8s&list=PLb2aaNHUy_gEL23cC9QA4tVFjZve0XrOB&index=13&ab_channel=ARYDigitalHD">
+                <img src="public/images/kuch ankahi.webp" alt="">
+            </a>
+        </div>
+        <div class="card3">
+            <a href="https://www.youtube.com/watch?v=TS8hQxwn6xs&list=PLdZNFVCDo_1cF5l3XQDHZ-KnNmmhOg-nY&index=103&ab_channel=HARPALGEO">
+                <img src="public/images/grift-1.jpg">
+            </a>
+        </div>
+        <div class="card3">
+            <a href="https://www.youtube.com/watch?v=wykbxHM2Ch4&list=PLdZNFVCDo_1fAo1couOKo4E_uVD7luqpG&index=28&ab_channel=HARPALGEO">
+                <img src="public/images/tere bin-1.jpg">
+            </a>
+        </div>
+        <div class="card3">
+            <a href="https://www.youtube.com/watch?v=O4CkGK6XYuw&list=PLdZNFVCDo_1f7QzYeYmlBRRrkgQnuuBJG&index=52&ab_channel=HARPALGEO">
+                <img src="public/images/qalandar-1.jpg">
+            </a>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer__row--col">
+            <ul>
+                <li class="footer__row--item"><p><a href="">FAQ</a></p></li>
+                <li class="footer__row--item"><p><a href="">Investor relations</a></p></li>
+                <li class="footer__row--item"><p><a href="">privacy</a></p></li>
+                <li class="footer__row--item"><p><a href="">speed test</a></p></li>
+            </ul>
+        </div>
+
+        <div class="footer__row--col">
+            <ul>
+                <li class="footer__row--item"><p>Help center</p></li>
+                <li class="footer__row--item"><p><a href="">jobs</a></p></li>
+                <li class="footer__row--item"><p><a href="">cookie preference</a></p></li>
+                <li class="footer__row--item"><p><a href="">legal notice</a></p></li>
+            </ul>
+        </div>
+
+        <div class="footer__row--col">
+            <ul>
+                <li class="footer__row--item"><p>Account</p></li>
+                <li class="footer__row--item"><p><a href="">ways to watch</a></p></li>
+                <li class="footer__row--item"><p><a href="">corporate information</a></p></li>
+                <li class="footer__row--item"><p><a href="">only on Netflix</a></p></li>
+            </ul>
+        </div>
+
+        <div class="footer__row--col">
+            <ul>
+                <li class="footer__row--item"><p>Media center</p></li>
+                <li class="footer__row--item"><p><a href="">Terms of use</a></p></li>
+                <li class="footer__row--item"><p><a href="">Contact us</a></p></li>
+            </ul>
+        </div>
+    </div>
+    <p class="copyright">
+        Netflix Pakistan
+    </p>
+</body>
+</html>
